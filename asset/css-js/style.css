@@ -88,9 +88,11 @@ span {
 }
 
 span:active {
-    background-color: #fff;
+    border-radius: 8px;
     background-size: 100%;
     transition: background 0s;
+    backdrop-filter: blur(5px);
+    background-color: rgba(252, 252, 252, 0.1);
 }
 
 /* Table */
