@@ -179,15 +179,16 @@ td:hover {
     transform: scale(2px);
 }
 
-table tbody tr:nth-child(2) td:first-child {
+table tbody tr:last-child td:nth-child(2) {
     position: relative;
 }
 
-table tbody tr:nth-child(2) td:first-child span img {
+table tbody tr:last-child td:nth-child(2) span img {
     height: 25px;
+    margin-bottom: 5px;
     transition: 0.4s;
 }
 
-table tbody tr:nth-child(2) td:first-child span:hover img {
-    height: 35px;
+table tbody tr:last-child td:nth-child(2) span:hover img {
+    height: 40px;
 }
