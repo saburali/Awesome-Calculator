@@ -4,8 +4,8 @@
 }
 
 @font-face {
-    font-family: 'digital';
-    src: url('../font/digital.ttf') format('truetype');
+  font-family: digital;
+  src: url(https://res.cloudinary.com/thepeted/raw/upload/v1507751384/DSDIGI_ctlean.ttf);
 }
 
 body {
