@@ -10,14 +10,15 @@
 
 <body>
     <h2 class="b-text"> Simple Calculator </h2>
+    <form name="calculatorForm">
     <table>
         <thead>
             <tr>
                 <td colspan="4">
                     <img src="asset/image/display.jpg" alt="display" />
                     <div class="input-container">
-                        <input type="text" value="72+64" />
-                        <input type="text" value="136" />
+                        <input type="text" name="totalResult" placeholder="Result" value="Result" />
+                        <input type="text" name="result" placeholder="0" id="blink" />
                     </div>
                 </td>
             </tr>
@@ -28,80 +29,114 @@
             </tr>
             <tr>
                 <td>
-                    <img src="asset/image/c.png" />
-                    <span onclick="play()"></span>
+                    <button type="button" onclick="cle(value)" value="">
+                        <img src="asset/image/c.png" />
+                        <span onclick="play()"></span>
+                    </button>
                 </td>
                 <td>
-                    <img src="asset/image/div.png" />
-                    <span onclick="play()"></span>
+                    <button type="button" onclick="number(value)" value="/">
+                        <img src="asset/image/div.png" />
+                        <span onclick="play()"></span>
+                    </button>
                 </td>
                 <td>
-                    <img src="asset/image/mul.png" />
-                    <span onclick="play()"></span>
+                    <button type="button" onclick="number(value)" value="*">
+                        <img src="asset/image/mul.png" />
+                        <span onclick="play()"></span>
+                    </button>
                 </td>
                 <td>
-                    <img src="asset/image/sub.png" />
-                    <span onclick="play()"></span>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <img src="asset/image/seven.png" />
-                    <span onclick="play()"></span>
-                </td>
-                <td>
-                    <img src="asset/image/eight.png" />
-                    <span onclick="play()"></span>
-                </td>
-                <td>
-                    <img src="asset/image/nine.png" />
-                    <span onclick="play()"></span>
-                </td>
-                <td>
-                    <img src="asset/image/add.png" />
-                    <span onclick="play()"></span>
+                    <button type="button" onclick="number(value)" value="-">
+                        <img src="asset/image/sub.png" />
+                        <span onclick="play()"></span>
+                    </button>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <img src="asset/image/four.png" />
-                    <span onclick="play()"></span>
+                    <button type="button" onclick="number(value)" value="7">
+                        <img src="asset/image/seven.png" />
+                        <span onclick="play()"></span>
+                    </button>
                 </td>
                 <td>
-                    <img src="asset/image/five.png" />
-                    <span onclick="play()"></span>
+                    <button type="button" onclick="number(value)" value="8">
+                        <img src="asset/image/eight.png" />
+                        <span onclick="play()"></span>
+                    </button>
                 </td>
                 <td>
-                    <img src="asset/image/six.png" />
-                    <span onclick="play()"></span>
+                    <button type="button" onclick="number(value)" value="9">
+                        <img src="asset/image/nine.png" />
+                        <span onclick="play()"></span>
+                    </button>
                 </td>
                 <td>
-                    <img src="asset/image/module.png" />
-                    <span onclick="play()"></span>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <img src="asset/image/one.png" />
-                    <span onclick="play()"></span>
-                </td>
-                <td>
-                    <img src="asset/image/two.png" />
-                    <span onclick="play()"></span>
-                </td>
-                <td>
-                    <img src="asset/image/three.png" />
-                    <span onclick="play()"></span>
-                </td>
-                <td>
-                    <img src="asset/image/dot.png" />
-                    <span onclick="play()"></span>
+                    <button type="button" onclick="number(value)" value="+">
+                        <img src="asset/image/add.png" />
+                        <span onclick="play()"></span>
+                    </button>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <img src="asset/image/zero.png" />
-                    <span onclick="play()"></span>
+                    <button type="button" onclick="number(value)" value="4">
+                        <img src="asset/image/four.png" />
+                        <span onclick="play()"></span>
+                    </button>
+                </td>
+                <td>
+                    <button type="button" onclick="number(value)" value="5">
+                        <img src="asset/image/five.png" />
+                        <span onclick="play()"></span>
+                    </button>
+                </td>
+                <td>
+                    <button type="button" onclick="number(value)" value="6">
+                        <img src="asset/image/six.png" />
+                        <span onclick="play()"></span>
+                    </button>
+                </td>
+                <td>
+                    <button type="button" onclick="number(value)" value="%">
+                        <img src="asset/image/module.png" />
+                        <span onclick="play()"></span>
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="button" onclick="number(value)" value="1">
+                        <img src="asset/image/one.png" />
+                        <span onclick="play()"></span>
+                    </button>
+                </td>
+                <td>
+                    <button type="button" onclick="number(value)" value="2">
+                        <img src="asset/image/two.png" />
+                        <span onclick="play()"></span>
+                    </button>
+                </td>
+                <td>
+                    <button type="button" onclick="number(value)" value="3">
+                        <img src="asset/image/three.png" />
+                        <span onclick="play()"></span>
+                    </button>
+                </td>
+                <td>
+                    <button type="button" onclick="number(value)" value=".">
+                        <img src="asset/image/dot.png" />
+                        <span onclick="play()"></span>
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="button" onclick="number(value)" value="1">
+                        <img src="asset/image/zero.png" />
+                        <span onclick="play()"></span>
+                    </button>
                 </td>
                 <td>
                     <img src="asset/image/demo.png" />
@@ -112,12 +147,17 @@
                     </a>
                 </td>
                 <td colspan="2">
-                    <img src="asset/image/equal.png" />
-                    <span onclick="play()"></span>
+                    <button type="button" onclick="evalua()">
+                        <img src="asset/image/equal.png" />
+                        <span onclick="play()"></span>
+                    </button>
                 </td>
             </tr>
         </tbody>
     </table>
+    </form>
     <audio id="audio" src="asset/audio/tink.wav"></audio>
     <script src="asset/css-js/custom.js" type="text/javascript"></script>
-</body></html>
+</body>
+
+</html>
